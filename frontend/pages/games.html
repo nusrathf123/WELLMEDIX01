@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WellMedix - Recommended Games to De-Stress</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      min-height: 100vh;
+     background: linear-gradient(135deg, #dce9ff, #e7f0ff, #f1f6ff);
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+   
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004d47;
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: black;
+      margin-bottom: 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      padding: 25px 30px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .card h2 {
+      color: #004d47;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    }
+
+    .card ul {
+      list-style: disc;
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+      color: black;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .next-btn {
+      background-color: #004d47;
+      color: #ffffff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .next-btn:hover {
+      background-color: #00b3a4;
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Recommended Games to De-Stress</h1>
+    <p class="subtitle">Boost your mood and refresh your mind with these calming and fun games.</p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>1. Bubble Wrap Popper</h2>
+        <ul>
+          <li>A simple clickable pop game.</li>
+          <li>Designed to calm your mind with satisfying pops.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>2. Memory Card Game</h2>
+        <ul>
+          <li>Activates the brain in a low-pressure way, improving concentration.</li>
+          <li>Boosts mood by completing small tasks successfully.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>3. Fun Board Games</h2>
+        <ul>
+          <li>Like Snakes and Ladders, Ludo, etc.</li>
+          <li>Turns stress relief into a fun daily habit.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. Calm Jenga</h2>
+        <ul>
+          <li>Physical skill game requiring steady hands and patience.</li>
+          <li>Promotes mindfulness and focus.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>5. Color Therapy</h2>
+        <ul>
+          <li>Relax by filling images with soothing colors.</li>
+          <li>Reduces anxiety and improves creativity.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>6. Relaxing Music Game</h2>
+        <ul>
+          <li>Create your own peaceful environment with ambient sounds.</li>
+          <li>Ideal for unwinding, meditation, or deep relaxation.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="btn-container">
+      <button class="next-btn" onclick="goNext()">Next ➜</button>
+    </div>
+  </div>
+
+  <script>
+    function goNext() {
+      // Navigate to next page (replace with your actual next page file)
+      window.location.href = "exercise.html";
+    }
+  </script>
+</body>
+</html>

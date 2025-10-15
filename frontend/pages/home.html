@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellmedix | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+              background: linear-gradient(to bottom, #b5e3e0, #1d6d63);
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .glass:hover {
+      transform: scale(1.05);
+    }
+    .btn-primary {
+      background-color: #1d6d63;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #2a6a66a1;
+    
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen text-gray-800">
+
+  <!-- Navbar -->
+  <header class="w-full fixed top-0 left-0 bg-white shadow-md py-4 px-8 flex justify-between items-center z-50">
+    <h1 class="text-2xl font-bold #1d6d63">Wellmedix</h1>
+    <nav class="space-x-6 font-semibold">
+      <a href="#home" class="hover:text-indigo-600">Home</a>
+      <a href="#features" class="hover:text-indigo-600">Features</a>
+      <a href="#community" class="hover:text-indigo-600">Community</a>
+      <a href="#profile" class="hover:text-indigo-600">Profile</a>
+      <a href="#" class="hover:text-indigo-600">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col justify-center items-center text-center mt-32 mb-16 px-6">
+    <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+      Welcome to <span class="text-indigo-700">Wellmedix</span>
+    </h2>
+    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl leading-relaxed">
+      Your AI-powered companion for stress management. Explore personalized exercises, games, tips, and music to boost your mental wellness.
+    </p>
+    <a href="#features" class="btn-primary text-lg shadow-md">Explore Features</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="px-8 py-20 bg-white/40 rounded-3xl mx-4 md:mx-12 lg:mx-24 shadow-lg">
+    <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Our Features</h3>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div class="glass p-6 text-center shadow-md">
+        <h4 class="text-xl font-semibold mb-2">🎮 Games</h4>
+        <p class="text-gray-700 mb-4">Play fun mini-games to relax and refresh your mind.</p>
+        <button class="btn-primary">Play Now</button>
+      </div>
+
+      <div class="glass p-6 text-center shadow-md">
+        <h4 class="text-xl font-semibold mb-2">🧘 Exercise</h4>
+        <p class="text-gray-700 mb-4">Follow guided breathing and meditation exercises.</p>
+        <button class="btn-primary">Start</button>
+      </div>
+
+      <div class="glass p-6 text-center shadow-md">
+        <h4 class="text-xl font-semibold mb-2">💡 Tips</h4>
+        <p class="text-gray-700 mb-4">Get personalized daily wellness and stress tips.</p>
+        <button class="btn-primary">View Tips</button>
+      </div>
+
+      <div class="glass p-6 text-center shadow-md">
+        <h4 class="text-xl font-semibold mb-2">🎵 Music</h4>
+        <p class="text-gray-700 mb-4">Relax with calming and focus-enhancing tunes.</p>
+        <button class="btn-primary">Listen</button>
+      </div>
+
+      <div class="glass p-6 text-center shadow-md">
+        <h4 class="text-xl font-semibold mb-2">📅 Emoji Calendar</h4>
+        <p class="text-gray-700 mb-4">Track your daily moods with fun emoji logging.</p>
+        <button class="btn-primary">Track Mood</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="px-8 py-20 mt-20 bg-gradient-to-br from-indigo-50 to-sky-100">
+    <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Community Highlights</h3>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass p-6 text-center shadow-md">
+        <p class="text-gray-700 mb-4 italic">"Tracking my stress daily has made me more mindful and calm!"</p>
+        <span class="font-semibold text-indigo-800">- Sarah M.</span>
+      </div>
+
+      <div class="glass p-6 text-center shadow-md">
+        <p class="text-gray-700 mb-4 italic">"The guided breathing sessions are a lifesaver before exams!"</p>
+        <span class="font-semibold text-indigo-800">- John D.</span>
+      </div>
+
+      <div class="glass p-6 text-center shadow-md">
+        <p class="text-gray-700 mb-4 italic">"Every day I feel more balanced and positive using Wellmedix."</p>
+        <span class="font-semibold text-indigo-800">- Priya K.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner text-gray-700">
+    <p>© 2025 <span class="text-indigo-700 font-semibold">Wellmedix</span>. All rights reserved.</p>
+    <p class="mt-2">Contact us: 
+      <a href="mailto:support@wellmedix.com" class="text-indigo-600 hover:underline">support@wellmedix.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
